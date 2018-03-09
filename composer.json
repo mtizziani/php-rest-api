@@ -1,0 +1,19 @@
+{
+    "name": "mtizziani/rest",
+    "description": "Rest Api with Slim and Doctrine",
+    "require": {
+        "slim/slim": "^3.9",
+        "doctrine/orm": "^2.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Maik Tizziani",
+            "email": "mtizziani@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
