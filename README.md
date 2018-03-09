@@ -11,7 +11,7 @@ This project is an Open Source Project and published under the APACHE2.0 License
 - composer
 
 ### Dependencies
-- ####Production
+- #### Production
   - Slim Framework ([link to git repository](https://github.com/slimphp/Slim))
   - Doctrine Framework ORM Package ([link to homepage](http://www.doctrine-project.org/))
 - #### Development
