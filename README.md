@@ -65,6 +65,20 @@ Best practice is to set the Project-Folder rights to 7 (dwrx) for the group www-
         RewriteRule ^ index.php [QSA,L]
     
       </Directory>
+      
+      #######################
+      # adding alias route for the generated reports
+      #######################
+      
+      Alias "/reports" "/full/path/to/your/project/api/reports"
+      <Directory /full/path/to/your/project/api/reports>
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride None
+        Order allow,deny
+        allow from all
+        Require all granted
+      </Directory>
+
     
       ErrorLog ${APACHE_LOG_DIR}/api.error.log
       LogLevel warn
