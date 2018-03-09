@@ -10,16 +10,15 @@ This project is an Open Source Project and published under the APACHE2.0 License
 - php ~7
 - composer
 
-## Dependencies
+### Dependencies
+- ####Production
+  - Slim Framework ([link to git repository](https://github.com/slimphp/Slim))
+  - Doctrine Framework ORM Package ([link to homepage](http://www.doctrine-project.org/))
+- #### Development
+  - PHPUnit ([link to homepage](https://phpunit.de/))
+  - PHPUnit Code Coverage Package
 
-- Slim Framework ([link to git repository](https://github.com/slimphp/Slim))
-- Doctrine Framework ORM Package ([link to homepage](http://www.doctrine-project.org/))
-
-## Dev-Dependencies
-
-- PHPUnit ([link to homepage](https://phpunit.de/))
-
-## Install
+## Installation
 
 The Project is created with Composer, the Installation is very simple. 
 
@@ -85,3 +84,12 @@ Best practice is to set the Project-Folder rights to 7 (dwrx) for the group www-
       CustomLog ${APACHE_LOG_DIR}/api.access.log combined
       ServerSignature On
     </VirtualHost>
+
+## Testing
+
+To execute the tests run `phpunit` from console. 
+A reports directory will be created if u use the phpunit.xml as config.
+This directory includes a coverage test and the standard testdox as html an txt. 
+
+If you have setup the Alias like in my VHost sample
+you can simply browse to [api/reports](http://api/reports) to have a look on the test results.
